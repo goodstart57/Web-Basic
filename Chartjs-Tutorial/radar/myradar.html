@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Radar Chart</title>
+	<script src="../dist/Chart.bundle.js"></script>
+	<script src="./utils.js"></script>
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="width:40%">
+		<canvas id="canvas"></canvas>
+	</div>
+	
+	<script>
+		// var bigs_score = score[0];
+		// var gain_score = score[1];
+		// var theme_score =score[2];
+		// var finance_score = score[3];
+		// var secret1_score = score[4];
+		// var secret2_score = score[5];
+		var bigs_score = 80;
+		var gain_score = 70;
+		var theme_score = 90;
+		var finance_score = 80;
+		var secret1_score = 75;
+		var secret2_score = 95;
+		
+		var color = Chart.helpers.color;
+		
+		var config = {
+			type: 'radar',
+			data: {
+				labels: ['빅스 점수', '수급 점수', '테마 점수', '재무 점수', 'Secret1', 'Secret2'],
+				datasets: [{
+					label: 'Stock Dataset',
+					backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+					borderColor: window.chartColors.red,
+					pointBackgroundColor: window.chartColors.red,
+					data: [bigs_score,
+						   gain_score,
+						   theme_score,
+						   finance_score,
+						   secret1_score,
+						   secret2_score]
+				}]
+			},
+			options: {
+				legend: {
+					position: 'top',
+				},
+				title: {
+					display: true,
+					text: '빅스 빅데이터 차트'
+				},
+				scale: {
+					ticks: {
+						beginAtZero: true
+					}
+				}
+			}
+		};
+
+		window.onload = function() {
+			window.myRadar = new Chart(document.getElementById('canvas'), config);
+		};
+	</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+GET /index.html HTTP/1.1
+Host: 127.0.0.1
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: csrftoken=63owID2535rq9Sj29WdTGx6duapx1kSk
+If-None-Match: "5df-57466e521b900-gzip"
+If-Modified-Since: Mon, 27 Aug 2018 08:56:03 GMT
+

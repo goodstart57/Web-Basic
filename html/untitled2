@@ -1,0 +1,47 @@
+HTTP/1.1 200 OK
+Date: Mon, 27 Aug 2018 14:30:14 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Last-Modified: Mon, 27 Aug 2018 08:56:03 GMT
+ETag: "5df-57466e521b900-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 818
+Keep-Alive: timeout=5, max=98
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!doctype html>
+<html>
+<head>
+    <title>WEB1 - html</title>
+    <meta carset="utf-8">
+</head>
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <ol>
+        <li>HTML<br></li>
+        <li>CSS<br></li>
+        <li>JavaScript<br></li>
+    </ol>
+    <h2>HTML</h2>
+    <p><a href="https://www.tensorflow.org/" target="_blank" title="tensorflow specification">WEB</a></p>
+    <strong>TensorFlow</strong> is Google Brain's second-generation system. 
+    Version 1.0.0 was released on <u>February 11, 2017</u>. 
+    While the reference implementation runs on single devices, 
+    TensorFlow can run on multiple CPUs and GPUs 
+    (with optional CUDA and SYCL extensions for general-purpose computing on graphics processing units). 
+    TensorFlow is available on 64-bit Linux, macOS, Windows, and mobile computing platforms including Android and iOS. 
+    Its flexible architecture allows for the easy deployment of computation across a variety of platforms 
+    (CPUs, GPUs, TPUs), and from desktops to clusters of servers to mobile and edge devices.
+    TensorFlow computations are expressed as stateful dataflow graphs. 
+    The name TensorFlow derives from the operations that such neural networks perform on multidimensional data arrays. 
+    These arrays are referred to as "tensors". 
+    In June 2016, Dean stated that 1,500 repositories on GitHub mentioned TensorFlow, of which only 5 were from Google.
+    </p>
+
+    <img src="./img/tensorflow.jpg">
+</body>
+</html>
